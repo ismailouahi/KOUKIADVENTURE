@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy – Kouki Adventure</title>
+  <style>
+    :root{
+      --bg:#0b0f14;
+      --panel:#101826;
+      --text:#e9eef7;
+      --muted:#b7c3d6;
+      --accent:#4da3ff;
+      --border:rgba(255,255,255,0.10);
+    }
+    body{
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: radial-gradient(900px 600px at 20% 10%, rgba(77,163,255,0.18), transparent 60%),
+                  var(--bg);
+      color:var(--text);
+      min-height:100vh;
+    }
+    .wrap{
+      width:min(920px, 92vw);
+      margin:0 auto;
+      padding:26px 0 26px;
+    }
+    .top{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      padding:14px 16px;
+      border:1px solid var(--border);
+      border-radius:14px;
+      background:rgba(16,24,38,0.65);
+      backdrop-filter: blur(6px);
+    }
+    .btn{
+      display:inline-block;
+      padding:10px 14px;
+      border-radius:12px;
+      border:1px solid var(--border);
+      color:var(--text);
+      text-decoration:none;
+      background: rgba(255,255,255,0.06);
+      font-size:14px;
+    }
+    .btn:hover{ border-color: rgba(77,163,255,0.6); }
+    .panel{
+      margin-top:14px;
+      padding:18px 18px 18px;
+      border:1px solid var(--border);
+      border-radius:14px;
+      background:rgba(16,24,38,0.55);
+    }
+    h1{ margin:0; font-size:18px; }
+    h2{ margin:16px 0 8px; font-size:14px; }
+    p, li{
+      color:var(--muted);
+      line-height:1.55;
+      font-size:13.5px;
+    }
+    ul{ margin-top:8px; }
+    .small{ font-size:12.5px; color:var(--muted); }
+    a{ color:var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <h1>Privacy Policy – Kouki Adventure</h1>
+      <a class="btn" href="index.html">Back</a>
+    </div>
+
+    <div class="panel">
+      <p class="small">Effective Date: <span id="d"></span></p>
+
+      <p>
+        Kouki Adventure is a mobile arcade game developed by Ismail Ouahi.
+        This game does not collect, store, or process personal data directly.
+      </p>
+
+      <h2>Advertising</h2>
+      <p>
+        Kouki Adventure uses Google AdMob to display advertisements. AdMob may collect certain information automatically,
+        such as:
+      </p>
+      <ul>
+        <li>Device identifiers (including Advertising ID)</li>
+        <li>IP address</li>
+        <li>Device information</li>
+        <li>Diagnostic information</li>
+        <li>Interaction data with ads</li>
+      </ul>
+
+      <p>
+        This data is processed by Google to provide ads (personalized or non-personalized, depending on user settings and region).
+        For more information, please review Google’s Privacy Policy:
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>
+      </p>
+
+      <h2>Data Usage</h2>
+      <p>Kouki Adventure does not:</p>
+      <ul>
+        <li>Require account registration</li>
+        <li>Collect user names or emails</li>
+        <li>Store gameplay data on external servers</li>
+        <li>Sell personal information</li>
+      </ul>
+
+      <h2>Children</h2>
+      <p>
+        Kouki Adventure is not specifically directed at children under 13. Ads are served in accordance with Google AdMob policies.
+      </p>
+
+      <h2>Changes to This Policy</h2>
+      <p>
+        This Privacy Policy may be updated if necessary. Any changes will be reflected on this page.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        If you have questions about this Privacy Policy, contact:
+        <a href="mailto:YOUR_EMAIL_HERE">YOUR_EMAIL_HERE</a>
+      </p>
+    </div>
+  </div>
+
+  <script>
+    const now = new Date();
+    const yyyy = now.getFullYear();
+    const mm = String(now.getMonth()+1).padStart(2, "0");
+    const dd = String(now.getDate()).padStart(2, "0");
+    document.getElementById("d").textContent = `${yyyy}-${mm}-${dd}`;
+  </script>
+</body>
+</html>
